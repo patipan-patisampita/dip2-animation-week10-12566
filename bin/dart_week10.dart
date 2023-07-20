@@ -1,9 +1,38 @@
 import 'dart:io';
 
 void main() {
-  ifElseIfDemo();
+  listIfElseIfDemo();
+  // ifElseIfDemo();
   // ifElseDemo();
   // ifDemo();
+}
+
+void listIfElseIfDemo() {
+  int age = 55;
+  List<String> MyAge = [
+    "วัยเด็ก",
+    "วัยรุ่น",
+    "วัยรุ่น",
+    "วัยกลางคน",
+    "วัยสูงอายุ",
+    "วัยชรา",
+    "ERROR"
+  ];
+  if (age >= 1 && age <= 20) {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[0]}");
+  } else if (age > 20 && age <= 45) {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[1]}");
+  } else if (age > 45 && age <= 60) {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[2]}");
+  } else if (age > 60 && age <= 70) {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[3]}");
+  } else if (age > 70 && age <= 80) {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[4]}");
+  } else if (age > 80 && age <= 100) {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[5]}");
+  } else {
+    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[6]}");
+  }
 }
 
 void ifElseIfDemo() {
