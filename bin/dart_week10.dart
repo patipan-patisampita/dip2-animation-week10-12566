@@ -9,6 +9,7 @@ void main() {
 
 void listIfElseIfDemo() {
   int age = 55;
+  String message = "";
   List<String> MyAge = [
     "วัยเด็ก",
     "วัยรุ่น",
@@ -19,20 +20,21 @@ void listIfElseIfDemo() {
     "ERROR"
   ];
   if (age >= 1 && age <= 20) {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[0]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[0]}";
   } else if (age > 20 && age <= 45) {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[1]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[1]}";
   } else if (age > 45 && age <= 60) {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[2]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[2]}";
   } else if (age > 60 && age <= 70) {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[3]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[3]}";
   } else if (age > 70 && age <= 80) {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[4]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[4]}";
   } else if (age > 80 && age <= 100) {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[5]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[5]}";
   } else {
-    print("อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[6]}");
+    message = "อายุของคุณคือ $age ปี อยู่ในช่วง: ${MyAge[6]}";
   }
+  print(message);
 }
 
 void ifElseIfDemo() {
