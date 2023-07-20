@@ -1,7 +1,8 @@
-import 'package:dart_week10/condition_demo.dart';
+import 'package:dart_week10/bmi_demo.dart';
 
 void main() {
-  listIfElseIfDemo();
+  bmiDemo();
+  // listIfElseIfDemo();
   // ifElseIfDemo();
   // ifElseDemo();
   // ifDemo();
